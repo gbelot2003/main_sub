@@ -13,7 +13,7 @@
 <?php endif; ?>
 	<div class="row"> 
 		<?php foreach ($rows as $id => $row): ?>
-		  <div class="large-3 small-12 columns">
+		  <div class="large-3 small-12 en columns">
 		    <?php print $row; ?>
 		  </div>
 		<?php endforeach; ?>

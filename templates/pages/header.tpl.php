@@ -15,7 +15,7 @@
                 <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
               
               
-                <li class="google_plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li class="google_plus"><a href="#"><i class="fa fa-googleplus"></i></a></li>
              
              
                 <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>

@@ -13,9 +13,9 @@
 	<?php endif; ?>
 	<ul id="myList" class="row"> 
 		<?php foreach ($rows as $id => $row): ?>
-		  <li class="large-3 small-12 columns">
+		  <li class="large-3 small-12 end columns">
 			<?php print $row; ?>
-		  </li>
+		  </li> 
 		<?php endforeach; ?>
 	</ul>
 	<span class="button tiny" id="loadMore">Ver Mas</span>

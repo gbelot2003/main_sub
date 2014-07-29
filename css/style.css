@@ -1,12 +1,123 @@
 /**********************************************
  * 
  * Put your custom CSS code here
- * 
+ *
+ * **************************************** Portal Atlantida*****************************
  * 
  */
-@import url("../fonts/style.css");
-@import url("https://s3-sa-east-1.amazonaws.com/canaturh/font/fonts/styles.css");
 
+/***********************************************
+* Colores principales de portales
+*  
+*
+	Atlantida = background:rgb(0,177,211);
+	Islas = background:rgb(239, 198, 68);
+	Lago  = background:rgb(0,157, 224);
+	occidente = background:rgb(204, 124, 26);
+	Otros = background:rgb(118, 152, 153);
+	San Pedro = background:rgb(177, 99,159);
+	Tegucigalpa = background:rgb(89,115,3);
+*
+*
+/***********************************************/
+@import url("../fonts/fuentes.css");
+@import url("../fonts/style.css");
+/**************** changes **********************/
+
+
+.header-top {
+	background:rgb(0,177,211) !important;
+} 
+
+.titlebar {
+	background:rgb(0,177,211) !important;
+}
+
+.titlebar .title {
+	color:#fff;
+}
+
+.page-subtitle {
+	
+}
+
+.social-icons.accent li i {
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+.social-icons.accent li i:hover {
+	border: 1px solid #aaa;
+	color: #aaa;
+}
+
+.fullwidth-slider .es-navigation a {
+	
+}
+
+.fullwidth-slider .es-navigation a:hover{
+	background:rgb(0,177,211) !important;
+}
+
+.view-eventos-y-festividades .dates, .page-taxonomy .dates {
+	background:rgba(0,177,211, 0.5) !important;
+}
+
+.block-views-relaciones-block {
+	/***** esta tiene rgba ***/
+	background:rgba(0,177,211, 0.5) !important;
+}
+
+.field-name-share {
+	rgba(0,177,211,0.5) !important
+}
+
+.explora {
+	/* color: #ff9e00; //defecto */
+}
+
+.portal {
+	color:rgb(0,177,211);
+	/*Color del portal*/
+}
+
+.guara {
+	color: rgb(0,177,211) !important;
+	/*color del portal lleva imagen de HondurasGuara*/
+}
+
+.block-views-relaciones-block {
+	background:rgba(0,177,211, 0.5) !important;
+}
+
+
+/************************************************************************************************/
+
+
+/***********************************************************************************************/
+
+.canaturh {
+	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg') center left ;
+}
+
+.iht {
+	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg') -100px -12px;
+}
+
+.usaid {
+	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg')  -200px -62px;
+}
+
+.nwt {
+	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg')  -200px -5px;
+}
+
+.patrocinador {
+	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg')  -400px -5px;
+}
+
+
+/**********************************************/
 #status {
 	background-image: url("../images/loader-main.gif");
 	position: fixed;
@@ -66,12 +177,7 @@ fieldset {
 }
 
 .titlebar {
-	background: rgb(35, 166, 174) !important;
 	margin-bottom: 0.8rem;
-}
-
-.titlebar .title {
-	color: white;
 }
 
 .breadcrumbs, .breadcrumbs a, .breadcrumbs>.current a{
@@ -175,7 +281,7 @@ fieldset {
 }
 
 .block-views-relaciones-block {
-	background: rgba(3, 101, 202, 0.6);
+	
 }
 
 .block-views-relaciones-block h3 {
@@ -486,38 +592,7 @@ fieldset {
 	background: #553A4E;
 }
 
-/********** Change with portal color's *************/
-.fullwidth-slider .es-navigation a {
-	background:rgb(35, 166, 174) !important;
-}
 
-.fullwidth-slider .es-navigation a:hover{
-	background: black !important;
-}
-
-.view-eventos-y-festividades .dates, .page-taxonomy .dates {
-	background:rgb(35, 166, 174) !important;
-}
-
-.field-name-share {
-	background:rgba(35, 166, 174, 0.5) !important;
-}
-
-.explora {
-	color:rgb(255, 158, 0);
-}
-
-.portal {
-	color:rgb(35, 166, 174);
-}
-
-.guara {
-	color: rgb(35, 166, 174) !important;
-}
-
-.block-views-relaciones-block {
-	background:rgba(35, 166, 174, 0.5) !important;
-}
 /**************************************************/
 
 
@@ -1391,14 +1466,61 @@ a.transportes {
 	font-size: 1.8rem;
 	margin-bottom: 2px;
 }
-.slide-ico .field-content {
+
+/************ iconos *************************/
+.slide-ico {
 	position: absolute;
 	bottom: 10px;
-	right: 85%;
+	right: 91%;
 }
-.slide-ico .field-content img {
-	width: 35px !important;
+
+.icos {
+	display: block;
+	width: 35px;
+	height: 1px;
+	padding-top: 36px;
+	overflow: hidden;
 }
+
+.solyplaya, .sunandbeach {
+	background: url("../images/ico/solyplaya.png") no-repeat center center;
+}
+
+.adventure, .aventura {
+	background: url("../images/ico/aventura.png") no-repeat center center;
+}  
+
+.archeology, .arqueologia {
+	background: url("../images/ico/arqueologia.png") no-repeat center center;
+}
+
+.birding, .aviturismo {
+	background: url("../images/ico/aviturismo.png") no-repeat center center;
+} 
+
+.culture, .cultura {
+	background: url("../images/ico/cultura.png") no-repeat center center;
+}
+
+.nature, .naturaleza {
+	background: url("../images/ico/naturaleza.png") no-repeat center center;
+}
+
+.divin, .buceo {
+	background: url("../images/ico/buceo.png") no-repeat center center;
+}
+
+.gastronomia, .gastronomy {
+	background: url("../images/ico/gastronomia.png") no-repeat center center;
+}
+
+.livingcultures, .culturasvivas {
+	background: url("../images/ico/culturasvivas.png") no-repeat center center;
+} 
+
+
+/*********************************************/
+
 .views-slideshow-pager-field-item {
 	margin: 0 5px 0 0;
 }
@@ -1702,38 +1824,7 @@ a.transportes {
 	font-family: Hondurean;
 }
 
-
-/*************** changes **********************/
-
-
-.header-top {
-} 
-
-.titlebar {
-}
-
-.fullwidth-slider .es-navigation a {
-}
-
-.fullwidth-slider .es-navigation a:hover{
-}
-
-.view-eventos-y-festividades .dates, .page-taxonomy .dates {
-}
-
-.field-name-share {
-}
-
-.explora {
-}
-
-.portal {
-}
-
-.guara {
-}
-
-/**********************************************/
+/****/
 
 .monop {padding-top:0.9em;}
 .bigs {border-right: 1px solid silver;}
@@ -1769,29 +1860,13 @@ a.transportes {
 	overflow:hidden;
 }
 
-.canaturh {
-	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg') center left ;
-}
-
-.iht {
-	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg') -100px -12px;
-}
-
-.usaid {
-	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg')  -200px -62px;
-}
-
-.nwt {
-	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg')  -200px -5px;
-}
-
-.patrocinador {
-	background: url('https://s3-sa-east-1.amazonaws.com/canaturh/logos/logos_icos.jpg')  -400px -5px;
-}
-
-/********************************************/
+/**************** Media querys *******************/
 
 @media only screen and (max-width: 40em) { 
+	.l-slider {
+		display:none;
+	}
+	
 	.blog-slide img {
 		display: none;
 	}
@@ -1807,5 +1882,11 @@ a.transportes {
 		padding-left:0 !important;
 	}
 	
-
+	.field-type-geofield {
+		display:none;
+	}	
 }
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

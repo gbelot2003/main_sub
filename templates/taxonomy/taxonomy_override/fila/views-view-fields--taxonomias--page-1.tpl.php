@@ -26,9 +26,14 @@
 ?>
 <div class="views-row-content">
 	<div class="grid-block fade">
-		<?php print $fields['field_image']->content ?>		
+		<?php if(strlen($fields['field_ref_destninos']->content) < 100): ?>
+			<?php print $fields['field_image']->content ?>		
+		<?php endif ?>
 	</div>
 	<h5><?php print $fields['title']->content ?></h5>
-	<p><?php print $fields['field_ref_destninos']->content ?></p>
+	
+	<?php if(strlen($fields['field_ref_destninos']->content) < 33): ?>
+		<p><?php print $fields['field_ref_destninos']->content ?></p>
+	<?php endif ?>
 </div>
-<?php //krumo($fields['title']->content); ?>
+

@@ -14,7 +14,7 @@
 <div id="relaciones2" class="large-12 columns">
 	<div class="row"> 
 		<?php foreach ($rows as $id => $row): ?>
-		  <div class="large-6 small-6 columns">
+		  <div class="large-6 small-6 end columns">
 		    <?php print $row; ?>
 		  </div>
 		<?php endforeach; ?>

@@ -80,6 +80,12 @@
 		$('.has-icon').click(function(event) {event.preventDefault();});
 	});	
 
+	$(document).ready(function(){
+		$('.field-type-ds a')
+	});
+
+
+
 })(jQuery, Drupal);
 
 

@@ -14,8 +14,8 @@
 <div id="relaciones2" class="large-12 columns">
 	<div class="row"> 
 		<?php foreach ($rows as $id => $row): ?>
-		  <div class="large-4 columns taxonomia">
-		    <?php print $row; ?>
+		  <div class="large-4 columns end taxonomia">
+		    <?php print $row;?>
 		  </div>
 		<?php endforeach; ?>
 	</div>

@@ -28,4 +28,5 @@
 	<?php print $fields['field_image']->content ?>
 	<h5><?php print $fields['title']->content ?></h5>
 	<p><?php print $fields['body']->content ?></p>
+	
 </div>
