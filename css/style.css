@@ -5,7 +5,6 @@
  * **************************************** Portal Principa*****************************
  * 
  */
-
 /***********************************************
 * Colores principales de portales
 *  
@@ -588,20 +587,34 @@ fieldset {
 .alternador-de-idiomas .language-switcher-locale-url li {
 	list-style: none;
 	display: inline;
+	float:right;
 }
 
-.alternador-de-idiomas .language-switcher-locale-url a {
-	padding: 0.6rem;
-	background: rgba(77,77,255,0.8);
-	color: white;
-	font-size: 0.8rem;
+.lang-es .language-switcher-locale-url a {
+	display:block;
+	width:26px;
+	height:0px;
+	padding-top:16px;
+	overflow:hidden;
+	background:url("https://s3-sa-east-1.amazonaws.com/canaturh/logos/lang_switcher.png") 0 32px;
 }
 
-.alternador-de-idiomas  a.active {
-	background: #ff4d4d !important;
-	font-weight: bold
+.lang-es .language-switcher-locale-url a.active {
+	background:url("https://s3-sa-east-1.amazonaws.com/canaturh/logos/lang_switcher.png") -30px -32px;
 }
 
+.lang-en .language-switcher-locale-url a{
+	display:block;
+	width:26px;
+	height:0px;
+	padding-top:16px;
+	overflow:hidden;
+	background:url("https://s3-sa-east-1.amazonaws.com/canaturh/logos/lang_switcher.png") 26px 32px;
+}
+
+.lang-en .language-switcher-locale-url a.active {
+	background:url("https://s3-sa-east-1.amazonaws.com/canaturh/logos/lang_switcher.png") left 16px;
+}
 
 .circulos li {
 	display: inline;
@@ -1624,7 +1637,7 @@ a.transportes {
 }
 
 .blog-slide .active .views-field-title {
-	color: red;
+	color: blue;
 }
 
 .es-ticker{
@@ -1730,6 +1743,10 @@ a.transportes {
 	background: url("../images/marca1.png") no-repeat right bottom;
 	width: 195px;
 	margin-top: -50px;
+}
+
+.single{
+	font-weight: bold;
 }
 
 .slider-name-single {
