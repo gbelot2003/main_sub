@@ -20,10 +20,10 @@ if($language_content->language == "es"){
 					<h5 class="portal"><?php print t("the heart of Central America") ?></h5>
 				</div>
 				
-					<div class="img-h h"><a title="<?php print t("Hotels") ?>" href="<?php print $hotels ?>">Hotel</a></div>
-					<div class="img-t h"><a title="<?php print t("Transport") ?>" href="<?php print $tran ?>">Transportes</a></div>
-					<div class="img-o h"><a title="<?php print t("Restaurants")?>" href="<?php print $rest ?>">Restaurantes</a></div>
-					<div class="img-s h"><a title="<?php print t("Tour")?>" href="<?php print $tour ?>">Tour Operador</a></div>
+					<div class="img-h h"><a title="#">Hotel</a></div>
+					<div class="img-t h"><a title="#">Transportes</a></div>
+					<div class="img-o h"><a title="#">Restaurantes</a></div>
+					<div class="img-s h"><a title="#">Tour Operador</a></div>
 			</div>
 			
 			<div id="slider-destiny">
