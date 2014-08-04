@@ -81,8 +81,12 @@
 	});	
 
 	$(document).ready(function(){
-		$('.field-type-ds a')
+		$('.divi .expanded').click(function(event){
+			event.preventDefault();
+			console.log('click');
+		});
 	});
+	
 
 
 

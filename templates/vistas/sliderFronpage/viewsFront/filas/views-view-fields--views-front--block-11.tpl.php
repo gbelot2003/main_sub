@@ -23,13 +23,23 @@
  *
  * @ingroup views_templates
  */
+
+$txy = $fields['field_explorar_text']->raw;
+$txy = strtolower($txy);
+$txy = str_replace(' ', '', $txy);
+$txy = str_replace('í', 'i', $txy);
 ?>
-<div class="slide-container">
+
+<div id="taxonomiaRef" class="slide-container">
 	<div class="slide-image">
 		<?php print $fields['field_image_principa_slider']->content ?>
 		<div class="slide-caption">
-			<p class="slider-name">	<?php print $fields['title']->content ?></p>
-			<p><?php print $fields['field_origen']->content ?></p>
+			<span class="slide-ico"><span class="icos <?php print $txy ?>"><?php print $fields['field_explorar_text']->content ?></span></span>
+			<p class="slider-name"><?php print $fields['title']->content ?>
+								<?php print $fields['field_origen']->content ?></p>
 		</div>
 	</div>	
 </div>
+
+
+ 

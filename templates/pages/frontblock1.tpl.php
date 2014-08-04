@@ -34,7 +34,7 @@ if($language_content->language == "es"){
 		<div class="large-6 small-12 columns">
 			<div class="row">
 
-				<?php print views_embed_view('taxonomias_frontpage', $display_id = 'block') ?>
+				<?php print views_embed_view('views_front', $display_id = 'block_11') ?>
 				
 				<div class="large-12 columns">
 					<?php print views_embed_view('views_front', $display_id = 'block_1') ?>

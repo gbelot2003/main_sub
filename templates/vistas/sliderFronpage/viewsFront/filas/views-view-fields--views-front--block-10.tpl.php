@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Default simple view template to all the fields as a row.
@@ -24,12 +23,10 @@
  * @ingroup views_templates
  */
 ?>
-<div class="slide-container">
-	<div class="slide-image">
-		<?php print $fields['field_image_principa_slider']->content ?>
-		<div class="slide-caption">
-			<p class="slider-name">	<?php print $fields['title']->content ?></p>
-			<p><?php print $fields['field_origen']->content ?></p>
-		</div>
-	</div>	
+<div id="videoModal" class="reveal-modal large" data-reveal>
+  <h4><?php print $fields['title']->content ?></h4>
+  <div class="flex-video">
+	  <?php print $fields['field_video_field']->content ?>
+  </div>
+  <a class="close-reveal-modal">&#215;</a>
 </div>

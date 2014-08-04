@@ -24,12 +24,15 @@
  * @ingroup views_templates
  */
 ?>
+
 <div class="slide-container">
 	<div class="slide-image">
-		<?php print $fields['field_image_principa_slider']->content ?>
+		<a href="#" data-reveal-id="videoModal">
+		<?php print $fields['field_image_thum']->content ?>
 		<div class="slide-caption">
-			<p class="slider-name">	<?php print $fields['title']->content ?></p>
-			<p><?php print $fields['field_origen']->content ?></p>
+			<span class="slide-ico icons"><span class="fa fa-youtube"></span></span>
+			<p class="slider-name"><?php print $fields['title']->content ?></p>
 		</div>
+		</a>
 	</div>	
 </div>
