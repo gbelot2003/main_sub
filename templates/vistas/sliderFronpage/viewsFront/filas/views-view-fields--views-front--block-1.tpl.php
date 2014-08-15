@@ -27,7 +27,7 @@
 
 <div class="slide-container large-6 small-12 columns">
 	<div class="slide-image">
-		<?php print $fields['field_image']->content ?>
+		<?php print $fields['field_image_principa_slider']->content ?>
 		<div class="slide-caption">
 			<p class="slider-name-single single"><?php print $fields['title']->content ?></p>
 		</div>
