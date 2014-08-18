@@ -2007,6 +2007,16 @@ a.transportes {
 /**************** Media querys *******************/
 
 @media only screen and (max-width: 40em) { 
+	
+	.top-bar .name h1 a{
+		background: url("https://s3-sa-east-1.amazonaws.com/canaturh/logos/logo3.png") no-repeat;
+	}
+	
+	.icons {
+		right:38%;
+		top:-140%;
+	}
+	
 	.l-slider {
 		display:none;
 	}
@@ -2035,7 +2045,6 @@ a.transportes {
 	.half img {
 		margin:-10px 0px -10px 0px !important;
 	}
-/******************************* FIX RESPONSIVE FOR IPAD - TABLET *******************************/	
 
 	.sponsor1, .sponsor2, .sponsor3 {
 	width:100%;
@@ -2048,8 +2057,14 @@ a.transportes {
 	}
 }
 
+/******************************* FIX RESPONSIVE FOR IPAD - TABLET *******************************/	
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
 
+	.top-bar .name h1 a{
+		background: url("https://s3-sa-east-1.amazonaws.com/canaturh/logos/logo3.png") no-repeat;
+	}
+	
 	.sponsor1, .sponsor2, .sponsor3 {
 	width:100%;
 	float:none;
@@ -2080,3 +2095,5 @@ a.transportes {
 	}
 }
 /******************************* END FIX RESPONSIVE FOR IPAD - TABLET *******************************/
+
+
