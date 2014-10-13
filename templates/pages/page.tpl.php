@@ -93,7 +93,14 @@
       </div>   
   <?php endif; ?>
 
-  <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
+    <!--.triptych-->
+    <section class="l-triptych row">
+		<?php include("sub_slide.tpl.php") ?>
+    </section>
+    <!--/.triptych -->
+
+
+<?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-columns -->
     <section class="l-footer-columns">
       <div class="row">
@@ -101,8 +108,7 @@
           <div class="footer-first large-3 small-6 columns">
             <?php print render($page['footer_firstcolumn']); ?>
           </div>
-        <?php endif; ?>
-		  
+        <?php endif; ?>  
         <?php if (!empty($page['footer_secondcolumn'])): ?>
           <div class="footer-second large-3 small-6 columns">
             <?php print render($page['footer_secondcolumn']); ?>

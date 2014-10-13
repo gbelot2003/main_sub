@@ -30,7 +30,7 @@ $txy = str_replace(' ', '', $txy);
 $txy = str_replace('í', 'i', $txy);
 ?>
 
-<div id="taxonomiaRef" class="slide-container">
+<div id="taxonomiaRef" class="slide-container large-12 columns">
 	<div class="slide-image">
 		<?php print $fields['field_image_principa_slider']->content ?>
 		<div class="slide-caption">

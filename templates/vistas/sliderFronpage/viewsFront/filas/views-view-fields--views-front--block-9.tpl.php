@@ -28,11 +28,11 @@
 <div class="slide-container">
 	<div class="slide-image">
 		<a href="#" data-reveal-id="videoModal">
-		<?php print $fields['field_image_thum']->content ?>
-		<div class="slide-caption">
-			<span class="icons"><span class="fa fa-youtube"></span></span>
-			<p class="slider-name"><?php print $fields['title']->content ?></p>
-		</div>
+			<?php print $fields['field_image_thum']->content ?>
+			<div class="slide-caption">
+				<span class="icons"><span class="fa fa-youtube"></span></span>
+				<p class="slider-name"><?php print $fields['title']->content ?></p>
+			</div>
 		</a>
 	</div>	
 </div>

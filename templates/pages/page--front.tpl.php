@@ -7,7 +7,6 @@
         <?php print render($page['featured']); ?>
       </div>
     </section>
-
     <section class="l-frontpage">
 		<div class="row">
 			<div id="font-block-1" class="large-12 columns">

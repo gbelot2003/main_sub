@@ -16,5 +16,5 @@
   </div>
 <?php endforeach; ?>
 <div class="large-12 columns rest">
-	<span><a href="http://demo2.webmasterhn.com/es/gallerys">Mas..</a></span>
+	<span><a href="http://demo2.webmasterhn.com/es/">Mas..</a></span>
 </div>
