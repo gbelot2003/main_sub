@@ -1,6 +1,3 @@
-<!--.page -->
-<div role="document" class="page">
-
   <!--.l-header region -->
   <header role="banner" class="l-header">
     
@@ -107,11 +104,20 @@
     <?php endif; ?>
     <!-- End title, slogan and menu -->
     
-    <?php if (!empty($page['slider'])): ?>
+
       <section class="l-slider">
+        <?php if (!empty($page['slider'])): ?>
           <?php print render($page['slider']); ?>
+        <?php endif; ?>
+        <div>
+          <h2 class="front-title"><span class="guara"><?php print t("Explore") ?> <span>Honduras</span> </span></h2>
+          <div>
+            <h5 class="portal"><?php print t("the heart of Central America") ?></h5>
+          </div>
+        </div>
+      
       </section>
-    <?php endif; ?>
+
   
   
   <?php include("titlebar.tpl.php"); ?> 

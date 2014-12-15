@@ -10,8 +10,8 @@
     <section class="l-frontpage">
 		<div class="row">
 			<div id="font-block-1" class="large-12 columns">
-          		<?php include("frontblock1.tpl.php") ?>
-        	</div>
+        <?php include("frontblock1.tpl.php") ?>
+      </div>
 		</div>
         
         <hr style="visibility: hidden" /> 

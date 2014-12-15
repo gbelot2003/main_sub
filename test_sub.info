@@ -1,4 +1,4 @@
-name = Main Site Theme
+name = Test Site Theme
 description = A sub-theme of Metro-Blocks for Main Site. 
 core = 7.x
 engine = phptemplate
@@ -6,8 +6,10 @@ engine = phptemplate
 base theme = metroblocks
 
 ; Call style sheets.
+; stylesheets[all][] = css/custom.css
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/system.maintenance.css
+
+;stylesheets[all][] = css/system.maintenance.css
 
 regions[top_block]           = Top Block
 regions[header_top_left]     = Header Top Left

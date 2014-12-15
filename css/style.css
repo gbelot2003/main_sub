@@ -99,6 +99,20 @@
 
 /*****************************************DIVISOR******************************************************/
 
+.page-node-520 .thumb {
+	
+} 
+
+table.color-box{
+	width: 100%;
+}
+
+table thead, table tfoot{
+	background: #8DCCBF;
+}
+
+/*****************************************************************************************************/
+
 .node-type-destinos-turisticos #fullwidth_slider {
 	margin-top:2rem;
 }

@@ -1,4 +1,13 @@
+ <!--.page -->
+<div role="document" class="page">
   <?php include("header.tpl.php"); ?>
+
+  <?php if (!empty($page['slider'])): ?>
+    <section class="l-slider">
+      <?php print render($page['slider']); ?>
+    </section>
+  <?php endif; ?>
+
   <?php if (!empty($page['featured'])): ?>
     <!--/.featured -->
     <section class="l-featured row">
