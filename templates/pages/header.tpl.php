@@ -104,14 +104,22 @@
     <?php endif; ?>
     <!-- End title, slogan and menu -->
     
-
       <section class="l-slider">
         <?php if (!empty($page['slider'])): ?>
           <?php print render($page['slider']); ?>
         <?php endif; ?>
+        
         <div class="front-message">
           <h2 class="front-title"><span class="guara"><?php print t("Explore") ?> <span>Honduras</span> </span></h2>
           <h5 class="portal"><?php print t("the heart of Central America") ?></h5>
+          
+          <div class="hash">
+            <div class="row">
+              <div class="large-12 columns text-center">
+                <?php print render($page['hash']) ?></div>
+              </div>
+          </div>
+        
         </div>
       
       </section>

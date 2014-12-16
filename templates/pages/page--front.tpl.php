@@ -71,58 +71,34 @@
       </div>
 
       <div class="row">
-        <div class="large-7 columns">
-            <h3>Noticias</h3>
-            <?php print views_embed_view('views_front', $display_id = 'block_3');  ?>
-        </div>  
+        <div class="large-8 columns">
+          <h3>Noticias</h3>
+          <?php print views_embed_view('views_front', $display_id = 'block_3');  ?>
 
-        <div class="large-5 small-12 columns">
+          <hr style="visibility: hidden" /> 
+          
+          <h5><?php print t("Event's Calendar") ?></h5>
+          <?php print views_embed_view('eventos_y_festividades', $display_id = 'block');?>
+        </div>  
+        
+
+        
+        <div class="large-4 small-12 columns">
           <div class="row">
             <?php print views_embed_view('views_front', $display_id = 'block_11') ?> 
-              <hr />
+            
+            <hr style="visibility: hidden" />
+            
             <?php print views_embed_view('views_front', $display_id = 'block_1') ?>         
+            
+            <hr style="visibility: hidden" />
+            
+            <?php print views_embed_view('views_front', $display_id = 'block_9');  ?></div>
+          
           </div><!-- end row -->
         </div>
       </div>
 
-      <hr style="visibility: hidden" /> 
-
-      <div class="row">
-        <div id="font-block-3" class="large-12 columns">
-          <hr style="visibility: hidden" />   
-          <div class="row">
-            <div class="large-5 small-12 columns">
-              <div class="large-12 columns video">
-                <?php print views_embed_view('views_front', $display_id = 'block_9');  ?></div>
-
-            <div class="large-12 columns">
-              <div class="large-12 columns">
-                <?php print views_embed_view('views_front', $display_id = 'block_6');  ?></div>
-              </div>
-              
-              <div class="large-12 columns">
-                <div class="hash">
-                  <div class="row">
-                    <div class="large-12 columns">
-                      <?php print render($page['hash']) ?></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="large-7 small-12 columns">
-
-                <div class="large-12 columns blog-slide">
-                  <!-- blog-->  
-                  </div>
-              <div class="large-12 columns">
-                <h5><?php print t("Event's Calendar") ?></h5>
-                <?php print views_embed_view('eventos_y_festividades', $display_id = 'block');?></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
       <?php if(!drupal_is_front_page()) print render($page['content']); ?>
     </div>
