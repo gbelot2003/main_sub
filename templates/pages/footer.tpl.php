@@ -10,7 +10,7 @@
 				<div class="sponsor2">
 					<ul class="logos-li">
 						<li class="lpremium-2"><a class="usaid" target="_black" href="http://www.usaid-proparque.org/">usaid</a></li>
-						<li class="lpremium-3"><a class="nwt" target="_black" href="http://www.nwtrips.com/">New World Trips</a></li>
+						
 					</ul>
 				</div>
 				<div class="sponsor3">
