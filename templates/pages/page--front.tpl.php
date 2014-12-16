@@ -8,7 +8,60 @@
       </div>
     </section>
 
-    <section class="l-frontpage">
+    <!--/.l-featured -->
+  
+  <?php if (!empty($page['wide_region'])): ?>
+  <div class="wide-region">
+    <?php print render($page['wide_region']); ?>
+  </div>
+  <?php endif; ?>
+
+<!-- Agregamos mas bloques con el mismo estilo -->
+  <?php if (!empty($page['wide_two_region'])): ?>
+    <div class="wide-two-region">
+      <div class="row">
+      <div class="large-12 columns">
+        <?php print render($page['wide_two_region']); ?>
+      
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
+<!-- fin de wide-two -->
+
+  <?php if (!empty($page['help'])): ?>
+    <!--/.l-help -->
+    <section class="l-help row">
+      <div class="large-12 columns">
+        <?php print render($page['help']); ?>
+      </div>
+    </section>
+    <!--/.l-help -->
+  <?php endif; ?>
+
+  <main role="main" class="row l-main">
+    <div class="<?php print $main_grid; ?> main columns">
+      <?php if (!empty($page['highlighted'])): ?>
+        <div class="highlight panel callout">
+          <?php print render($page['highlighted']); ?>
+        </div>
+      <?php endif; ?>
+
+      <a id="main-content"></a>
+
+      <?php if ($action_links): ?>
+        <ul class="action-links">
+          <?php print render($action_links); ?>
+        </ul>
+      <?php endif; ?>
+    <div class="row">      
+       <?php if (!empty($page['before_content'])): ?>
+        <div role="complementary" class="large-12 columns">
+          <?php print render($page['before_content']); ?>
+        </div>
+      <?php endif; ?>
+    </div>
+        <div class="l-frontpage">
 
       <div class="row">
           <div class="small-12 columns">
@@ -70,60 +123,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <!--/.l-featured -->
-  
-  <?php if (!empty($page['wide_region'])): ?>
-  <div class="wide-region">
-    <?php print render($page['wide_region']); ?>
-  </div>
-  <?php endif; ?>
-
-<!-- Agregamos mas bloques con el mismo estilo -->
-  <?php if (!empty($page['wide_two_region'])): ?>
-    <div class="wide-two-region">
-      <div class="row">
-      <div class="large-12 columns">
-        <?php print render($page['wide_two_region']); ?>
-      
-        </div>
-      </div>
     </div>
-  <?php endif; ?>
-<!-- fin de wide-two -->
 
-  <?php if (!empty($page['help'])): ?>
-    <!--/.l-help -->
-    <section class="l-help row">
-      <div class="large-12 columns">
-        <?php print render($page['help']); ?>
-      </div>
-    </section>
-    <!--/.l-help -->
-  <?php endif; ?>
-
-  <main role="main" class="row l-main">
-    <div class="<?php print $main_grid; ?> main columns">
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlight panel callout">
-          <?php print render($page['highlighted']); ?>
-        </div>
-      <?php endif; ?>
-
-      <a id="main-content"></a>
-
-      <?php if ($action_links): ?>
-        <ul class="action-links">
-          <?php print render($action_links); ?>
-        </ul>
-      <?php endif; ?>
-    <div class="row">      
-       <?php if (!empty($page['before_content'])): ?>
-        <div role="complementary" class="large-12 columns">
-          <?php print render($page['before_content']); ?>
-        </div>
-      <?php endif; ?>
-    </div>
       <?php if(!drupal_is_front_page()) print render($page['content']); ?>
     </div>
     <!--/.main region -->
