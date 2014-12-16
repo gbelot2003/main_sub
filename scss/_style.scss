@@ -71,6 +71,22 @@
 	background:rgba(0,71,186,0.5) !important;
 }
 
+.explora {
+	 color:rgb(0, 71, 186);
+}
+
+.portal {
+	color:rgb(0,71,186)!important;
+	/*Color del portal*/
+	text-align:center;
+	font-size: 2rem;
+}
+
+.guara {
+	color: rgb(0, 71, 186) !important;
+	font-size:4.5rem !important;
+	/*color del portal lleva imagen de HondurasGuara*/
+}
 
 .block-views-relaciones-block {
 	background:rgba(0,71,186, 0.5) !important;
@@ -1725,7 +1741,12 @@ a.transportes {
 	height: 240px;
 }
 
-
+.front-title {
+	font-family: Hondurean;
+	text-align: center;
+	font-size: 4rem;
+	margin-bottom: 0;
+}
 .palabras-lista li {
 	text-align: center;
 	list-style: none;
@@ -1752,6 +1773,24 @@ a.transportes {
 	color: #C91048;
 }
 
+
+.guara {
+	margin-top:10px;
+	text-align:center;
+	color:#2E7AC8;
+	font-size:2.5rem;
+	margin-bottom: 0;
+}
+
+.guara span {
+	display:inline-block;
+	height:0px;
+	padding-top:80px;
+	overflow:hidden;
+	background: url("../images/marca1.png") no-repeat right bottom;
+	width: 195px;
+	margin-top: -50px;
+}
 
 .single{
 	font-weight: bold;
@@ -2002,68 +2041,6 @@ a.transportes {
 
 /****************************************END SPONSORS*************************************/
 
-
-/** Fix 12-2014 */
-
-.l-slider{
-	background:url('../images/bgs_1.jpg');	
-    background-size: cover;
-    background-position: center center;
-    height: 260px;
-    display: block;
-}
-
-.front-title {
-	font-family: Hondurean;
-	text-align: center;
-	font-size: 4rem;
-	margin-bottom: 0;
-}
-
-
-.front-message{
-	padding: 55px 0;
-}
-
-.guara {
-	/*color: rgb(0, 71, 186) !important;*/
-	font-size:4.5rem !important;
-	margin-top:25px;
-	text-align:center;
-	color:white;
-	font-size:2.5rem;
-	margin-bottom: 0;
-	text-shadow: 2px 2px 1px black;
-}
-
-.guara span {
-	display:inline-block;
-	height:0px;
-	padding-top:80px;
-	overflow:hidden;
-	background: url("../images/marca1.png") no-repeat right bottom;
-	width: 195px;
-	margin-top: -50px;
-}
-
-.explora {
-	 color:rgb(0, 71, 186);
-}
-
-.portal {
-	/*color:rgb(0,71,186)!important;
-	/*Color del portal*/
-	color: white;
-	text-align:center;
-	font-size: 2rem;
-	text-shadow: 2px 2px 1px black;
-}
-
-
-
-
-
-
 /**************** Media querys *******************/
 
 @media only screen and (max-width: 40em) { 
@@ -2077,9 +2054,9 @@ a.transportes {
 		top:-140%;
 	}
 	
-	/*.l-slider {
+	.l-slider {
 		display:none;
-	}*/
+	}
 	
 	.blog-slide img {
 		display: none;
@@ -2209,6 +2186,4 @@ a.transportes {
 	}
 }
 /******************************* END FIX RESPONSIVE FOR IPAD - TABLET *******************************/
-
-
 

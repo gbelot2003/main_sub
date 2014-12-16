@@ -61,7 +61,8 @@
         </div>
       <?php endif; ?>
     </div>
-        <div class="l-frontpage">
+    
+    <div class="l-frontpage">
 
       <div class="row">
           <div class="small-12 columns">
