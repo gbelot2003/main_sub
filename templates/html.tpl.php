@@ -63,10 +63,8 @@
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
-  <!-- Preloader
-  <div id="preloader">
-      <div id="status">&nbsp;</div>
-  </div> -->
+  <!-- Preloader -->
+
   
   <div class="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
@@ -75,5 +73,20 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php print _zurb_foundation_add_reveals(); ?>
+  <script>
+    (function ($, Drupal, window, document, undefined) {
+      $(document).foundation();
+     })(jQuery, Drupal, this, this.document); 
+     
+     (function ($, Drupal, window, document, undefined) {
+      //<!-- Preloader -->
+      $(window).load(function() { // makes sure the whole site is loaded
+          $('#status').fadeOut(); // will first fade out the loading animation
+          $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+          $('body').delay(350).css({'overflow':'visible'});
+      });
+      
+    })(jQuery, Drupal, this, this.document);	
+  </script>
 </body>
 </html>
