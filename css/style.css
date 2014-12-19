@@ -2006,7 +2006,7 @@ a.transportes {
 /** Fix 12-2014 */
 
 .l-slider{
-	background:url('../images/bgs_1.jpg');	
+	background:url('../images/bgs_2.jpg');	
     background-size: cover;
     background-position: center center;
     height: 260px;
@@ -2059,8 +2059,28 @@ a.transportes {
 	text-shadow: 2px 2px 1px black;
 }
 
+.view--frontpage {
+	margin-bottom: 2rem;
+	clear: both;
+}
 
+.view--frontpage .views-row {
+	clear: both;
+	margin-bottom: 4rem;
+} 
 
+.views-field-field-imagen-principal {
+	width: 110px;
+	float: left;
+}
+
+.views-field-title{
+	padding: 1rem 0 0 0.5rem
+}
+
+.views-field-field-imagen-principal img{
+	border-radius: 50px;
+}
 
 
 
