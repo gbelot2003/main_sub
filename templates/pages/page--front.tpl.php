@@ -72,13 +72,15 @@
 
       <div class="row">
         <div class="large-8 columns">
-          <h3>Noticias</h3>
-          <?php print views_embed_view('views_front', $display_id = 'block_3');  ?>
+          <div class="small-12 columns">
+            <h3>Noticias</h3>
+            <?php print views_embed_view('_frontpage', $display_id = 'block');  ?>
+          </div>
 
-          <hr style="visibility: hidden" /> 
-          
-          <h5><?php print t("Event's Calendar") ?></h5>
-          <?php print views_embed_view('eventos_y_festividades', $display_id = 'block');?>
+          <div class="small-12 columns">
+            <h5><?php print t("Event's Calendar") ?></h5>
+            <?php print views_embed_view('eventos_y_festividades', $display_id = 'block');?>
+          </div>
         </div>  
         
 
